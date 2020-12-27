@@ -1,0 +1,23 @@
+{
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"node": "current"
+				},
+				"useBuiltIns": "entry",
+				"corejs": 3
+			}
+		]
+	],
+	"plugins": [
+		"@babel/plugin-syntax-dynamic-import",
+		[
+			"@babel/plugin-transform-runtime",
+			{
+				"regenerator": true
+			}
+		]
+	]
+}
